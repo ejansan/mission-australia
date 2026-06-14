@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades - Mission Australia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bali: #E88D67;
+            --bali-light: #FFF5F0;
+            --vietnam: #5B8C5A;
+            --vietnam-light: #F0F7F0;
+            --australia: #4A90A4;
+            --australia-light: #EDF5F7;
+            --dark: #1a1a2e;
+            --gray: #6b7280;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fafafa; color: var(--dark); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--dark); color: white; text-decoration: none; border-radius: 25px; font-size: 0.9em; font-weight: 600; margin-bottom: 30px; transition: transform 0.2s; }
+        .back-btn:hover { transform: translateY(-2px); }
+
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.2em; margin-bottom: 10px; }
+        .subtitle { color: var(--gray); margin-bottom: 40px; }
+
+        .destiny-section { margin-bottom: 40px; }
+        .destiny-header { display: flex; align-items: center; gap: 12px; padding: 18px 24px; border-radius: 16px; font-family: 'Playfair Display', serif; font-size: 1.4em; font-weight: 700; margin-bottom: 20px; }
+        .destiny-header.bali { background: var(--bali-light); color: var(--bali); border-left: 5px solid var(--bali); }
+        .destiny-header.vietnam { background: var(--vietnam-light); color: var(--vietnam); border-left: 5px solid var(--vietnam); }
+        .destiny-header.australia { background: var(--australia-light); color: var(--australia); border-left: 5px solid var(--australia); }
+
+        .activity-card { background: white; border-radius: 14px; padding: 22px 25px; margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 4px solid transparent; transition: transform 0.2s; }
+        .activity-card:hover { transform: translateX(5px); }
+        .activity-card.bali { border-left-color: var(--bali); }
+        .activity-card.vietnam { border-left-color: var(--vietnam); }
+        .activity-card.australia { border-left-color: var(--australia); }
+
+        .activity-title { font-weight: 700; font-size: 1.05em; margin-bottom: 6px; }
+        .activity-meta { display: flex; gap: 12px; flex-wrap: wrap; font-size: 0.85em; color: var(--gray); }
+        .activity-tag { padding: 3px 10px; border-radius: 10px; font-size: 0.75em; font-weight: 600; }
+        .activity-tag.bali { background: var(--bali-light); color: var(--bali); }
+        .activity-tag.vietnam { background: var(--vietnam-light); color: var(--vietnam); }
+        .activity-tag.australia { background: var(--australia-light); color: var(--australia); }
+        .activity-desc { margin-top: 8px; font-size: 0.92em; color: var(--gray); }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6em; }
+            .destiny-header { font-size: 1.1em; }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <a href="/mission-australia/index.html" class="back-btn">← Volver al Itinerario</a>
+        <h1>🎯 Actividades por Destino</h1>
+        <p class="subtitle">Todas las experiencias y actividades planificadas en el viaje</p>
+
+        <div class="destiny-section">
+            <div class="destiny-header bali">
+                <span>🇮🇩</span>
+                <span>Bali, Indonesia</span>
+            </div>
+
+            <div class="activity-card bali">
+                <div class="activity-title">🧘 Retiro de Yoga Teacher Training (200h)</div>
+                <div class="activity-meta">
+                    <span class="activity-tag bali">Bali</span>
+                    <span>📅 1 - 21 Julio · 20 noches</span>
+                    <span>📍 Ubud</span>
+                </div>
+                <div class="activity-desc">Curso intensivo de 200 horas de formación como instructor de yoga en el Bali Yoga Ashram, en el corazón de Ubud.</div>
+            </div>
+
+            <div class="activity-card bali">
+                <div class="activity-title">🔥 Kecak Uluwatu Kecak & Fire Dance Show</div>
+                <div class="activity-meta">
+                    <span class="activity-tag bali">Bali</span>
+                    <span>📅 17 Agosto</span>
+                    <span>📍 Uluwatu</span>
+                </div>
+                <div class="activity-desc">Espectáculo tradicional de danza y fuego al atardecer en el templo de Uluwatu, con vistas espectaculares al océano Índico.</div>
+            </div>
+        </div>
+
+        <div class="destiny-section">
+            <div class="destiny-header vietnam">
+                <span>🇻🇳</span>
+                <span>Vietnam</span>
+            </div>
+
+            <div class="activity-card vietnam">
+                <div class="activity-title">🍜 Recorrido gastronómico Guía Michelin</div>
+                <div class="activity-meta">
+                    <span class="activity-tag vietnam">Vietnam</span>
+                    <span>📅 26 Agosto · 17:00-19:30</span>
+                    <span>📍 Hanoi</span>
+                </div>
+                <div class="activity-desc">Recorrido a pie por las calles de Hanoi probando comida callejera recomendada por la Guía Michelin. Duración: 2.5 horas.</div>
+            </div>
+
+            <div class="activity-card vietnam">
+                <div class="activity-title">🚢 Crucero 5 estrellas por Halong Bay</div>
+                <div class="activity-meta">
+                    <span class="activity-tag vietnam">Vietnam</span>
+                    <span>📅 28 - 30 Agosto · 3 días/2 noches</span>
+                    <span>📍 Ninh Binh, Halong y Lan Ha</span>
+                </div>
+                <div class="activity-desc">Día 1: Hanoi → Ninh Binh → Visita Trang An (UNESCO), bici, bungalow. Día 2: Ninh Binh → Bahía de Ha Long — Crucero, playa Ba Trai Dao, cuevas, fiesta. Día 3: Bahía de Lan Ha → Hanoi — Tai Chi, kayak, regreso.</div>
+            </div>
+
+            <div class="activity-card vietnam">
+                <div class="activity-title">🌾 Trekking por terrazas de arroz</div>
+                <div class="activity-meta">
+                    <span class="activity-tag vietnam">Vietnam</span>
+                    <span>📅 31 Agosto</span>
+                    <span>📍 Sapa</span>
+                </div>
+                <div class="activity-desc">Ecoaventura por los campos de terrazas de arroz y visita a aldeas étnicas locales en Sapa. Por confirmar hora exacta.</div>
+            </div>
+
+            <div class="activity-card vietnam">
+                <div class="activity-title">🎢 Sun World Fansipan Legend</div>
+                <div class="activity-meta">
+                    <span class="activity-tag vietnam">Vietnam</span>
+                    <span>📅 2 Septiembre</span>
+                    <span>📍 Sapa</span>
+                </div>
+                <div class="activity-desc">Teleférico al techo de Indochina (3.143 m). Vistas panorámicas, templo budista y jardines en la cima de Fansipan.</div>
+            </div>
+        </div>
+
+        <div class="destiny-section">
+            <div class="destiny-header australia">
+                <span>🇦🇺</span>
+                <span>Australia</span>
+            </div>
+
+            <div class="activity-card australia">
+                <div class="activity-title">🏠 Inicio de nueva vida en Brisbane</div>
+                <div class="activity-meta">
+                    <span class="activity-tag australia">Australia</span>
+                    <span>📅 Desde ~24 Septiembre</span>
+                    <span>📍 Brisbane</span>
+                </div>
+                <div class="activity-desc">Trámites de establecimiento, búsqueda de residencia permanente y exploración de la Costa Este australiana.</div>
+            </div>
+        </div>
+
+        <a href="/mission-australia/index.html" class="back-btn" style="margin-top: 20px;">← Volver al Itinerario</a>
+    </div>
+</body>
+</html>
